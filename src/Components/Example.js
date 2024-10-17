@@ -32,6 +32,7 @@ const Example = () => {
 
     const [data, setData] = useState([])
     const [category, setCategory] = useState([])
+    const [search, setSearch] = useState('')
 
     useEffect(() => {
         fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=1118ca3022ef4203a2efc84cb4efc60a`)
